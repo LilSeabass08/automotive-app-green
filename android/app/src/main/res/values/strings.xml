@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">automotive-app-green</string>
+    <string name="title_activity_main">automotive-app-green</string>
+    <string name="package_name">automotive.app.green</string>
+    <string name="custom_url_scheme">automotive.app.green</string>
+</resources>

@@ -10,10 +10,10 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, person } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import { home, person, bag, logoIonic } from 'ionicons/icons';
+import Tab1 from './pages/Home';
+import Tab2 from './pages/Shop';
+import Tab3 from './pages/Reilly';
 import Account from './pages/Account';
 
 /* Core CSS required for Ionic components to work properly */
@@ -59,7 +59,7 @@ const App: React.FC = () => (
           <Route exact path="/shop">
             <Tab2 />
           </Route>
-          <Route path="/reilly-ai">
+          <Route path="/reilly">
             <Tab3 />
           </Route>
           <Route path="/account">
@@ -71,15 +71,15 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="home" href="/home">
-            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="shop" href="/shop">
-            <IonIcon aria-hidden="true" icon={ellipse} />
+            <IonIcon aria-hidden="true" icon={bag} />
             <IonLabel>Shop</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="reilly-ai" href="/reilly-ai">
-            <IonIcon aria-hidden="true" icon={square} />
+          <IonTabButton tab="reilly-ai" href="/reilly">
+            <IonIcon aria-hidden="true" icon={logoIonic} />
             <IonLabel>Reilly AI</IonLabel>
           </IonTabButton>
           <IonTabButton tab="account" href="/account">
